@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './css/home.css' ;
+import Header from './header';
 
 class Home extends Component {
 
@@ -16,6 +16,12 @@ class Home extends Component {
             
             
                 <div>
+                    <Header />
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <hr />
                  <a href="#" onClick={() => {this.logoutUser().bind(this)}} style={{float : 'right', paddingRight : '2px'}}>Logout</a> 
                      <ul>
                         <li>
@@ -29,7 +35,7 @@ class Home extends Component {
                         </li>
                      </ul>
 
-                    <hr />
+                   
       
                     <Route path="/about" component={About} />
                     <Route path="/topics" component={Topics} />

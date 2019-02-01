@@ -1,8 +1,11 @@
 html,
 body {   
-    padding: 20px;
-    margin: 0;
-    background-image: url('../images/backGround.jpg');
+    height: 100%;
+    /* margin: 0; */
+    background-image: url('../images/backGround.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #root {
@@ -19,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 125px;
     
 }
 
@@ -136,7 +139,7 @@ body {
     padding: 2px 30px;
     border: 0;
     font-size: 18px;
-    border-radius: 3px;
+    border-radius: 13px;
     font-family: Oxygen, sans-serif;
     background-color: rgba(15, 15, 15, 0.03);
     margin-top: 20px;
