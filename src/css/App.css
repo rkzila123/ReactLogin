@@ -186,3 +186,15 @@ body {
 .show {
     visibility: visible;
 }
+
+.link {
+    color: #FFF;
+}
+  
+.link:hover {
+     color: #00F
+}
+
+.ul {
+    list-style-type: none;
+  }

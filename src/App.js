@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Login from './Login' ;
 import Register from './Register' ;
-import Header from './header';
 
 
 class App extends Component {
@@ -26,7 +25,6 @@ showRegisterBox(){
 
     return (
       <div className="root-container">
-      <Header />
      <div className="box-controller">
        <div className={"controller " + (this.state.isLoginOpen
          ? "selected-controller"

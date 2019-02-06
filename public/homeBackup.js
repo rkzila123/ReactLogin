@@ -28,13 +28,13 @@ class Home extends Component {
                             <Link to="/about" className="link" style={{ textDecoration: 'none' }}>About</Link>
                         </li>
                         </ul>
-                     { <ul className="ul">
+                     {/* <ul className="ul">
                         <li>
                             <Link to="/topics" className="link" style={{ textDecoration: 'none' }}>Topics</Link>
                         </li>
-                     </ul> }
+                     </ul> */}
                      <Route path="/about" component={About} />
-                    { <Route path="/topics" component={Topics} /> }
+                    {/* <Route path="/topics" component={Topics} /> */}
                 </div>
                
             </Router>
@@ -51,39 +51,39 @@ function About() {
     );
   }
 
-  function Topics({ match }) {
-    return (
-      <div>
-        <h2>Topics</h2>
-        <ul>
-          <li>
-            <Link to={`${match.url}/rendering`} className="link" style={{ textDecoration: 'none' }}>Rendering with React</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/components`} className="link" style={{ textDecoration: 'none' }} >Components</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/props-v-state`}className="link" style={{ textDecoration: 'none' }} >Props v. State</Link>
-          </li>
-        </ul>
+  // function Topics({ match }) {
+  //   return (
+  //     <div>
+  //       <h2>Topics</h2>
+  //       <ul>
+  //         <li>
+  //           <Link to={`${match.url}/rendering`} className="link" style={{ textDecoration: 'none' }}>Rendering with React</Link>
+  //         </li>
+  //         <li>
+  //           <Link to={`${match.url}/components`} className="link" style={{ textDecoration: 'none' }} >Components</Link>
+  //         </li>
+  //         <li>
+  //           <Link to={`${match.url}/props-v-state`}className="link" style={{ textDecoration: 'none' }} >Props v. State</Link>
+  //         </li>
+  //       </ul>
   
-        <Route path={`${match.path}/:topicId`} component={Topic} />
-        <Route
-          exact
-          path={match.path}
-          render={() => <h3>Please select a topic.</h3>}
-        />
-      </div>
-    );
-  }
+  //       <Route path={`${match.path}/:topicId`} component={Topic} />
+  //       <Route
+  //         exact
+  //         path={match.path}
+  //         render={() => <h3>Please select a topic.</h3>}
+  //       />
+  //     </div>
+  //   );
+  // }
 
-  function Topic({ match }) {
-    return (
-      <div>
-        <h3>{match.params.topicId}</h3>
-      </div>
-    );
-  }
+  // function Topic({ match }) {
+  //   return (
+  //     <div>
+  //       <h3>{match.params.topicId}</h3>
+  //     </div>
+  //   );
+  // }
   
 
 export default Home;
